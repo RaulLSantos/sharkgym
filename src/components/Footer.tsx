@@ -1,22 +1,35 @@
+<<<<<<< HEAD
 import { Link } from "@tanstack/react-router";
+=======
+>>>>>>> origin/master
 import { Instagram, MapPin, Phone } from "lucide-react";
 import { site } from "@/data/siteData";
 
 export function Footer() {
   return (
+<<<<<<< HEAD
     <footer id="contato" className="border-t border-border bg-surface">
+=======
+    <footer className="border-t border-border bg-surface">
+>>>>>>> origin/master
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-4 md:px-8">
         <div className="md:col-span-2">
           <span className="text-2xl font-extrabold">
             SHARK <span className="text-brand">GYM</span>
           </span>
           <p className="mt-3 max-w-sm text-sm text-foreground/70">
+<<<<<<< HEAD
             Academia acessível no bairro Santa Cruz, em Cascavel - PR.
             Musculação, cardio, personal trainer, avaliação física e artes marciais.
+=======
+            Academia acessível no bairro Santa Cruz, em Cascavel - PR. Musculação, cardio, personal
+            trainer, avaliação física e artes marciais.
+>>>>>>> origin/master
           </p>
         </div>
 
         <div>
+<<<<<<< HEAD
           <h3 className="text-sm font-bold uppercase tracking-wider text-foreground/90">Navegação</h3>
           <ul className="mt-4 space-y-2 text-sm text-foreground/70">
             <li><a className="hover:text-brand" href="#inicio">Início</a></li>
@@ -25,6 +38,42 @@ export function Footer() {
             <li><a className="hover:text-brand" href="#beneficios">Benefícios</a></li>
             <li><a className="hover:text-brand" href="#aula-experimental">Aula Experimental</a></li>
             <li><a className="hover:text-brand" href="#localizacao">Localização</a></li>
+=======
+          <h3 className="text-sm font-bold uppercase tracking-wider text-foreground/90">
+            Navegação
+          </h3>
+          <ul className="mt-4 space-y-2 text-sm text-foreground/70">
+            <li>
+              <a className="hover:text-brand" href="#inicio">
+                Início
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-brand" href="#sobre">
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-brand" href="#servicos">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-brand" href="#beneficios">
+                Benefícios
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-brand" href="#aula-experimental">
+                Aula Experimental
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-brand" href="#contato">
+                Contato
+              </a>
+            </li>
+>>>>>>> origin/master
           </ul>
         </div>
 
@@ -64,9 +113,15 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-foreground/60 md:flex-row md:px-8">
           <p>© 2026 SHARK GYM. Todos os direitos reservados.</p>
+<<<<<<< HEAD
           <Link to="/politica-de-privacidade" className="hover:text-brand">
             Política de Privacidade
           </Link>
+=======
+          <a href="./politica-de-privacidade" className="hover:text-brand">
+            Política de Privacidade
+          </a>
+>>>>>>> origin/master
         </div>
       </div>
     </footer>

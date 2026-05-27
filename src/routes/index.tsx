@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+<<<<<<< HEAD
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Benefits } from "@/components/Benefits";
@@ -11,6 +12,9 @@ import { Location } from "@/components/Location";
 import { InstagramSection } from "@/components/InstagramSection";
 import { Footer } from "@/components/Footer";
 import { WhatsappButton } from "@/components/WhatsappButton";
+=======
+import { App } from "@/App";
+>>>>>>> origin/master
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,6 +59,7 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
+<<<<<<< HEAD
   component: Home,
 });
 
@@ -78,3 +83,7 @@ function Home() {
     </div>
   );
 }
+=======
+  component: App,
+});
+>>>>>>> origin/master

@@ -3,11 +3,21 @@ import { site } from "@/data/siteData";
 
 export function Location() {
   return (
+<<<<<<< HEAD
     <section id="localizacao" className="border-y border-border bg-surface py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-semibold uppercase tracking-wider text-brand">Onde estamos</span>
           <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">Venha treinar pertinho de você</h2>
+=======
+    <section id="contato" className="border-y border-border bg-surface py-20 md:py-28">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brand">Contato</span>
+          <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+            Venha treinar pertinho de você
+          </h2>
+>>>>>>> origin/master
           <p className="mt-3 text-foreground/70">
             Estamos no bairro Santa Cruz, em Cascavel - PR. Fácil acesso para moradores da região.
           </p>

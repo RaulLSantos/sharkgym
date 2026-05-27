@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { Link } from "@tanstack/react-router";
+=======
+>>>>>>> origin/master
 import { Menu, X } from "lucide-react";
 import { site } from "@/data/siteData";
 
@@ -9,7 +12,10 @@ const links = [
   { href: "#servicos", label: "Serviços" },
   { href: "#beneficios", label: "Benefícios" },
   { href: "#aula-experimental", label: "Aula Experimental" },
+<<<<<<< HEAD
   { href: "#localizacao", label: "Localização" },
+=======
+>>>>>>> origin/master
   { href: "#contato", label: "Contato" },
 ];
 
@@ -27,6 +33,7 @@ export function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
+<<<<<<< HEAD
         scrolled
           ? "bg-background/80 backdrop-blur-lg border-b border-border"
           : "bg-transparent"
@@ -38,6 +45,17 @@ export function Header() {
             SHARK <span className="text-brand">GYM</span>
           </span>
         </Link>
+=======
+        scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
+      }`}
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8 md:py-4">
+        <a href="./" className="flex items-center gap-2" aria-label="SHARK GYM - Página inicial">
+          <span className="text-xl font-extrabold tracking-tight md:text-2xl">
+            SHARK <span className="text-brand">GYM</span>
+          </span>
+        </a>
+>>>>>>> origin/master
 
         <nav className="hidden lg:flex items-center gap-7" aria-label="Navegação principal">
           {links.map((l) => (
