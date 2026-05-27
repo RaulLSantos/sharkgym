@@ -2,9 +2,6 @@
   "printWidth": 100,
   "semi": true,
   "singleQuote": false,
-<<<<<<< HEAD
-=======
   "endOfLine": "auto",
->>>>>>> origin/master
   "trailingComma": "all"
 }

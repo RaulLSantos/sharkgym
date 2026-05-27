@@ -1,20 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-<<<<<<< HEAD
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Benefits } from "@/components/Benefits";
-import { About } from "@/components/About";
-import { Services } from "@/components/Services";
-import { TrialCTA } from "@/components/TrialCTA";
-import { Beginners } from "@/components/Beginners";
-import { Schedule } from "@/components/Schedule";
-import { Location } from "@/components/Location";
-import { InstagramSection } from "@/components/InstagramSection";
-import { Footer } from "@/components/Footer";
-import { WhatsappButton } from "@/components/WhatsappButton";
-=======
 import { App } from "@/App";
->>>>>>> origin/master
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,31 +44,5 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
-<<<<<<< HEAD
-  component: Home,
-});
-
-function Home() {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Header />
-      <main>
-        <Hero />
-        <Benefits />
-        <About />
-        <Services />
-        <TrialCTA />
-        <Beginners />
-        <Schedule />
-        <Location />
-        <InstagramSection />
-      </main>
-      <Footer />
-      <WhatsappButton />
-    </div>
-  );
-}
-=======
   component: App,
 });
->>>>>>> origin/master

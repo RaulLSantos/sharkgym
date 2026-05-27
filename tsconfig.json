@@ -1,7 +1,4 @@
 {
-<<<<<<< HEAD
-  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "eslint.config.js"],
-=======
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
@@ -9,7 +6,6 @@
     "vite.static.config.ts",
     "eslint.config.js"
   ],
->>>>>>> origin/master
   "compilerOptions": {
     "target": "ES2022",
     "jsx": "react-jsx",
