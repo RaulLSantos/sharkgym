@@ -1,9 +1,11 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/
+    - export DEPLOYPATH=/home2/raullu77/public_html/
     - /bin/mkdir -p "$DEPLOYPATH"
     - /bin/cp -f dist/index.html "$DEPLOYPATH"
+    - /bin/cp -f dist/404.html "$DEPLOYPATH"
+    - /bin/cp -f dist/robots.txt "$DEPLOYPATH"
     - /bin/find dist -maxdepth 1 -type f \( -name "*.css" -o -name "*.js" \) -exec /bin/cp -f {} "$DEPLOYPATH" \;
     - /bin/cp -Rf dist/assets "$DEPLOYPATH"
     - /bin/sh -c 'if [ -f dist/.htaccess ]; then /bin/cp -f dist/.htaccess "$DEPLOYPATH"; fi'
