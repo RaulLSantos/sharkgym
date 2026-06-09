@@ -1,10 +1,11 @@
-import { Clock } from "lucide-react";
+﻿import { Clock } from "lucide-react";
 import { site } from "@/data/siteData";
 
 const schedule = [
-  { day: "Segunda a sexta", hours: "Consultar no WhatsApp" },
-  { day: "Sábado", hours: "Consultar no WhatsApp" },
-  { day: "Domingo", hours: "Consultar no WhatsApp" },
+  { day: "Segunda a sexta", hours: "06h às 23h" },
+  { day: "Sábado", hours: "08h às 11h e 14h às 17h" },
+    { day: "Domingo", hours: "SEM ATENDIMENTO" },
+    { day: "Feriados", hours: "Consulte no WhatsApp" },
 ];
 
 export function Schedule() {
@@ -37,7 +38,7 @@ export function Schedule() {
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-[var(--brand-foreground)] transition-transform hover:scale-105"
             >
-              Consultar horários no WhatsApp
+              Consultar horários
             </a>
           </div>
         </div>
