@@ -39,45 +39,59 @@
   --radius: 0.75rem;
 
   /* SHARK GYM brand */
-  --brand: #2A4F56;
-  --brand-foreground: #F3F4ED;
+  --brand: #2a4f56;
+  --brand-foreground: #f3f4ed;
   --background: #050505;
-  --foreground: #F3F4ED;
+  --foreground: #f3f4ed;
   --surface: #0d0d0d;
   --surface-elevated: #141414;
 
   --card: #0f1314;
-  --card-foreground: #F3F4ED;
+  --card-foreground: #f3f4ed;
   --popover: #0f1314;
-  --popover-foreground: #F3F4ED;
-  --primary: #2A4F56;
-  --primary-foreground: #F3F4ED;
+  --popover-foreground: #f3f4ed;
+  --primary: #2a4f56;
+  --primary-foreground: #f3f4ed;
   --secondary: #1a1f20;
-  --secondary-foreground: #F3F4ED;
+  --secondary-foreground: #f3f4ed;
   --muted: #15191a;
   --muted-foreground: #a5adac;
-  --accent: #2A4F56;
-  --accent-foreground: #F3F4ED;
+  --accent: #2a4f56;
+  --accent-foreground: #f3f4ed;
   --destructive: oklch(0.65 0.2 25);
-  --border: rgba(243, 244, 237, 0.10);
+  --border: rgba(243, 244, 237, 0.1);
   --input: rgba(243, 244, 237, 0.15);
-  --ring: #2A4F56;
+  --ring: #2a4f56;
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
 
   @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, *::before, *::after {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
       animation-duration: 0.001ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.001ms !important;
@@ -86,11 +100,17 @@
 }
 
 @layer utilities {
-  .text-brand { color: var(--brand); }
-  .bg-brand { background-color: var(--brand); }
-  .border-brand { border-color: var(--brand); }
+  .text-brand {
+    color: var(--brand);
+  }
+  .bg-brand {
+    background-color: var(--brand);
+  }
+  .border-brand {
+    border-color: var(--brand);
+  }
   .gradient-brand {
-    background: linear-gradient(135deg, #2A4F56 0%, #1a3b41 100%);
+    background: linear-gradient(135deg, #2a4f56 0%, #1a3b41 100%);
   }
   .gradient-radial-brand {
     background: radial-gradient(ellipse at top, rgba(42, 79, 86, 0.35), transparent 60%);
@@ -101,13 +121,21 @@
     animation: reveal 0.7s ease-out forwards;
   }
   @keyframes reveal {
-    to { opacity: 1; transform: translateY(0); }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .float-card {
     animation: float 6s ease-in-out infinite;
   }
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
   }
 }

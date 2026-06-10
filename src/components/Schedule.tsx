@@ -4,8 +4,8 @@ import { site } from "@/data/siteData";
 const schedule = [
   { day: "Segunda a sexta", hours: "06h às 23h" },
   { day: "Sábado", hours: "08h às 11h e 14h às 17h" },
-    { day: "Domingo", hours: "SEM ATENDIMENTO" },
-    { day: "Feriados", hours: "Consulte no WhatsApp" },
+  { day: "Domingo", hours: "SEM ATENDIMENTO" },
+  { day: "Feriados", hours: "Consulte no WhatsApp" },
 ];
 
 export function Schedule() {
@@ -13,7 +13,9 @@ export function Schedule() {
     <section className="py-20 md:py-28">
       <div className="mx-auto max-w-5xl px-4 md:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-wider text-brand">Funcionamento</span>
+          <span className="text-xs font-semibold uppercase tracking-wider text-brand">
+            Funcionamento
+          </span>
           <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">Horários de funcionamento</h2>
           <p className="mt-3 text-foreground/70">
             Consulte os horários atualizados pelo WhatsApp ou acompanhe as novidades pelo Instagram.

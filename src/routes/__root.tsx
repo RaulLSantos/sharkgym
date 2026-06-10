@@ -85,11 +85,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:title", content: "SHARK GYM | Academia em Cascavel - PR" },
       { name: "twitter:title", content: "SHARK GYM | Academia em Cascavel - PR" },
-      { name: "description", content: "Crie um site profissional para a academia SHARK GYM em Cascavel, PR, focado em geração de contatos via WhatsApp e SEO local." },
-      { property: "og:description", content: "Crie um site profissional para a academia SHARK GYM em Cascavel, PR, focado em geração de contatos via WhatsApp e SEO local." },
-      { name: "twitter:description", content: "Crie um site profissional para a academia SHARK GYM em Cascavel, PR, focado em geração de contatos via WhatsApp e SEO local." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/68e89885-dcfb-479d-bdd1-cb34f4d02e7e/id-preview-db68135f--f870b745-eeb0-4078-a4fb-0b3f89a516f4.lovable.app-1779296882022.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/68e89885-dcfb-479d-bdd1-cb34f4d02e7e/id-preview-db68135f--f870b745-eeb0-4078-a4fb-0b3f89a516f4.lovable.app-1779296882022.png" },
+      {
+        name: "description",
+        content:
+          "Crie um site profissional para a academia SHARK GYM em Cascavel, PR, focado em geração de contatos via WhatsApp e SEO local.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Crie um site profissional para a academia SHARK GYM em Cascavel, PR, focado em geração de contatos via WhatsApp e SEO local.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Crie um site profissional para a academia SHARK GYM em Cascavel, PR, focado em geração de contatos via WhatsApp e SEO local.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/68e89885-dcfb-479d-bdd1-cb34f4d02e7e/id-preview-db68135f--f870b745-eeb0-4078-a4fb-0b3f89a516f4.lovable.app-1779296882022.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/68e89885-dcfb-479d-bdd1-cb34f4d02e7e/id-preview-db68135f--f870b745-eeb0-4078-a4fb-0b3f89a516f4.lovable.app-1779296882022.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

@@ -2,12 +2,37 @@ import { Dumbbell, HeartPulse, UserCog, ClipboardCheck, Swords, CalendarRange } 
 import { site } from "@/data/siteData";
 
 const services = [
-  { icon: Dumbbell, title: "Musculação", desc: "Estrutura completa para hipertrofia, força e condicionamento.", featured: true },
-  { icon: HeartPulse, title: "Cardio", desc: "Equipamentos para melhorar fôlego, disposição e queima calórica." },
-  { icon: UserCog, title: "Personal Trainer", desc: "Acompanhamento individualizado para resultados consistentes." },
-  { icon: ClipboardCheck, title: "Avaliação Física", desc: "Entenda seu ponto de partida e acompanhe sua evolução." },
-  { icon: Swords, title: "Artes Marciais", desc: "Treinos que unem condicionamento físico, técnica e disciplina." },
-  { icon: CalendarRange, title: "Planos Mensal, Trimestral e Anual", desc: "Opções flexíveis para se adaptar ao seu objetivo e orçamento." },
+  {
+    icon: Dumbbell,
+    title: "Musculação",
+    desc: "Estrutura completa para hipertrofia, força e condicionamento.",
+    featured: true,
+  },
+  {
+    icon: HeartPulse,
+    title: "Cardio",
+    desc: "Equipamentos para melhorar fôlego, disposição e queima calórica.",
+  },
+  {
+    icon: UserCog,
+    title: "Personal Trainer",
+    desc: "Acompanhamento individualizado para resultados consistentes.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Avaliação Física",
+    desc: "Entenda seu ponto de partida e acompanhe sua evolução.",
+  },
+  {
+    icon: Swords,
+    title: "Artes Marciais",
+    desc: "Treinos que unem condicionamento físico, técnica e disciplina.",
+  },
+  {
+    icon: CalendarRange,
+    title: "Planos Mensal, Trimestral e Anual",
+    desc: "Opções flexíveis para se adaptar ao seu objetivo e orçamento.",
+  },
 ];
 
 export function Services() {
@@ -15,7 +40,9 @@ export function Services() {
     <section id="servicos" className="border-y border-border bg-surface py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-wider text-brand">Nossos serviços</span>
+          <span className="text-xs font-semibold uppercase tracking-wider text-brand">
+            Nossos serviços
+          </span>
           <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
             Estrutura para diferentes objetivos
           </h2>
@@ -46,8 +73,14 @@ export function Services() {
               >
                 <Icon className="h-6 w-6" aria-hidden="true" />
               </div>
-              <h3 className={`mt-5 font-bold ${featured ? "text-2xl lg:text-3xl" : "text-lg"}`}>{title}</h3>
-              <p className={`mt-2 ${featured ? "text-base opacity-90" : "text-sm text-foreground/70"}`}>{desc}</p>
+              <h3 className={`mt-5 font-bold ${featured ? "text-2xl lg:text-3xl" : "text-lg"}`}>
+                {title}
+              </h3>
+              <p
+                className={`mt-2 ${featured ? "text-base opacity-90" : "text-sm text-foreground/70"}`}
+              >
+                {desc}
+              </p>
             </article>
           ))}
         </div>

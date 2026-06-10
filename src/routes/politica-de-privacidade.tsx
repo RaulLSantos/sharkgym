@@ -44,43 +44,40 @@ function PrivacyPage() {
           <section>
             <h2 className="text-xl font-bold text-foreground">1. Sobre este site</h2>
             <p className="mt-2">
-              Este é o site institucional da SHARK GYM, academia localizada em
-              Cascavel - PR. O objetivo do site é apresentar informações sobre a
-              academia, seus serviços e facilitar o contato com a equipe.
+              Este é o site institucional da SHARK GYM, academia localizada em Cascavel - PR. O
+              objetivo do site é apresentar informações sobre a academia, seus serviços e facilitar
+              o contato com a equipe.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-foreground">2. Coleta de dados</h2>
             <p className="mt-2">
-              Este site não coleta, armazena ou processa dados pessoais dos
-              visitantes. Não utilizamos formulários de contato nem cadastro.
+              Este site não coleta, armazena ou processa dados pessoais dos visitantes. Não
+              utilizamos formulários de contato nem cadastro.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-foreground">3. Redirecionamentos externos</h2>
             <p className="mt-2">
-              O site contém links que podem redirecionar você para plataformas
-              externas, como WhatsApp, Instagram e Google Maps. Ao acessar
-              esses serviços, suas interações passam a seguir as políticas de
-              privacidade e termos de uso dessas plataformas, sobre as quais a
-              SHARK GYM não tem controle.
+              O site contém links que podem redirecionar você para plataformas externas, como
+              WhatsApp, Instagram e Google Maps. Ao acessar esses serviços, suas interações passam a
+              seguir as políticas de privacidade e termos de uso dessas plataformas, sobre as quais
+              a SHARK GYM não tem controle.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-foreground">4. Cookies</h2>
-            <p className="mt-2">
-              Este site não utiliza cookies para rastreamento ou publicidade.
-            </p>
+            <p className="mt-2">Este site não utiliza cookies para rastreamento ou publicidade.</p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-foreground">5. Contato</h2>
             <p className="mt-2">
-              Em caso de dúvidas sobre esta política, entre em contato pelo
-              WhatsApp (45) 99822-6281.
+              Em caso de dúvidas sobre esta política, entre em contato pelo WhatsApp (45)
+              99822-6281.
             </p>
           </section>
         </div>

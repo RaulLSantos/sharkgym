@@ -19,13 +19,11 @@ export function Hero() {
             Academia em Cascavel · Santa Cruz
           </span>
           <h1 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
-            Treine perto de casa,{" "}
-            <span className="text-brand">evolua no seu ritmo.</span>
+            Treine perto de casa, <span className="text-brand">evolua no seu ritmo.</span>
           </h1>
           <p className="mt-5 max-w-xl text-base text-foreground/80 md:text-lg">
-            Na SHARK GYM, você encontra musculação, cardio, avaliação física,
-            artes marciais e acompanhamento para começar ou continuar sua
-            evolução com mais segurança.
+            Na SHARK GYM, você encontra musculação, cardio, avaliação física, artes marciais e
+            acompanhamento para começar ou continuar sua evolução com mais segurança.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -57,7 +55,10 @@ export function Hero() {
               className="h-full w-full object-cover"
               fetchPriority="high"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" aria-hidden="true" />
+            <div
+              className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"
+              aria-hidden="true"
+            />
           </div>
 
           <div className="pointer-events-none absolute inset-0 hidden md:block">
@@ -67,19 +68,28 @@ export function Hero() {
                 <span className="text-sm font-semibold">Musculação</span>
               </div>
             </div>
-            <div className="float-card absolute -right-4 top-32 rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur-md shadow-xl" style={{ animationDelay: "1s" }}>
+            <div
+              className="float-card absolute -right-4 top-32 rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur-md shadow-xl"
+              style={{ animationDelay: "1s" }}
+            >
               <div className="flex items-center gap-2">
                 <HeartPulse className="h-5 w-5 text-brand" aria-hidden="true" />
                 <span className="text-sm font-semibold">Cardio</span>
               </div>
             </div>
-            <div className="float-card absolute -left-4 bottom-24 rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur-md shadow-xl" style={{ animationDelay: "2s" }}>
+            <div
+              className="float-card absolute -left-4 bottom-24 rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur-md shadow-xl"
+              style={{ animationDelay: "2s" }}
+            >
               <div className="flex items-center gap-2">
                 <UserCheck className="h-5 w-5 text-brand" aria-hidden="true" />
                 <span className="text-sm font-semibold">Treinos personalizados</span>
               </div>
             </div>
-            <div className="float-card absolute -right-6 bottom-10 rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur-md shadow-xl" style={{ animationDelay: "3s" }}>
+            <div
+              className="float-card absolute -right-6 bottom-10 rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur-md shadow-xl"
+              style={{ animationDelay: "3s" }}
+            >
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-brand" aria-hidden="true" />
                 <span className="text-sm font-semibold">Ambiente acessível</span>
@@ -89,7 +99,10 @@ export function Hero() {
 
           <div className="mt-4 grid grid-cols-2 gap-3 md:hidden">
             {floatingCards.map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center gap-2 rounded-xl border border-border bg-card px-3 py-2.5">
+              <div
+                key={label}
+                className="flex items-center gap-2 rounded-xl border border-border bg-card px-3 py-2.5"
+              >
                 <Icon className="h-4 w-4 text-brand" aria-hidden="true" />
                 <span className="text-xs font-semibold">{label}</span>
               </div>

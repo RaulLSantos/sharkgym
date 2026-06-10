@@ -37,7 +37,7 @@ const featuredClass =
   "group relative overflow-hidden rounded-2xl border border-brand/45 bg-[linear-gradient(135deg,rgba(42,79,86,0.34),rgba(12,22,24,0.96)_48%,rgba(8,11,11,0.98))] p-6 shadow-[0_24px_70px_rgba(42,79,86,0.18)] transition-all hover:-translate-y-1 hover:border-brand/70 hover:shadow-[0_28px_90px_rgba(42,79,86,0.25)] sm:col-span-2 lg:p-8";
 
 export function Benefits() {
-  const firstRowBenefits = benefits.slice(0,3);
+  const firstRowBenefits = benefits.slice(0, 3);
   const remainingBenefits = benefits.slice(3);
 
   return (
@@ -83,19 +83,21 @@ export function Benefits() {
                   Aulas coletivas para sair da rotina
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-foreground/78 md:text-base">
-                  Treinos em grupo com modalidades dinâmicas para quem busca mais
-                  energia, motivação e constância nos resultados.
+                  Treinos em grupo com modalidades dinâmicas para quem busca mais energia, motivação
+                  e constância nos resultados.
                 </p>
               </div>
               <div className="flex shrink-0 flex-wrap gap-2 md:max-w-56 md:justify-end">
-                              {["PILATES", "CROSS F", "ZUMBA", "TRX", "ABDOMEN", "BOXE", "CAPOEIRA", "MUAY "].map((label) => (
-                  <span
-                    key={label}
-                    className="rounded-full border border-brand/35 bg-black/20 px-3 py-1.5 text-xs font-semibold text-foreground/80"
-                  >
-                    {label}
-                  </span>
-                ))}
+                {["PILATES", "CROSS F", "ZUMBA", "TRX", "ABDOMEN", "BOXE", "CAPOEIRA", "MUAY "].map(
+                  (label) => (
+                    <span
+                      key={label}
+                      className="rounded-full border border-brand/35 bg-black/20 px-3 py-1.5 text-xs font-semibold text-foreground/80"
+                    >
+                      {label}
+                    </span>
+                  ),
+                )}
               </div>
             </div>
           </article>
