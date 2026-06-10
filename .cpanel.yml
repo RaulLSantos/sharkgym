@@ -1,4 +1,9 @@
 ---
 deployment:
   tasks:
-    - /bin/sh -c 'DEPLOYPATH="$HOME/public_html/sharkgym"; case "$DEPLOYPATH" in "$HOME"/public_html/sharkgym) /bin/mkdir -p "$DEPLOYPATH" && /bin/find "$DEPLOYPATH" -mindepth 1 -maxdepth 1 -exec /bin/rm -rf {} \; && /bin/cp -a dist/. "$DEPLOYPATH"/ ;; *) echo "Unsafe deploy path: $DEPLOYPATH"; exit 1 ;; esac'
+    - export DEPLOYPATH=$HOME/public_html/sharkgym
+    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/rm -rf "$DEPLOYPATH/assets"
+    - /bin/rm -f "$DEPLOYPATH/index.html" "$DEPLOYPATH/404.html" "$DEPLOYPATH/robots.txt" "$DEPLOYPATH/.htaccess"
+    - /bin/find "$DEPLOYPATH" -maxdepth 1 -type f \( -name "*.css" -o -name "*.js" -o -name "*.map" \) -delete
+    - /bin/cp -a dist/. "$DEPLOYPATH"/
