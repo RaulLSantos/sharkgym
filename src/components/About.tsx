@@ -9,7 +9,7 @@ export function About() {
             Sobre nós
           </span>
           <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
-            Uma academia de bairro feita para quem quer evoluir de verdade
+            Uma academia feita para quem quer evoluir de verdade
           </h2>
           <p className="mt-5 text-foreground/80 md:text-lg">
             A SHARK GYM nasceu para ser uma academia acessível, próxima e acolhedora para quem quer
@@ -19,6 +19,11 @@ export function About() {
             Seja para começar do zero ou voltar aos treinos, aqui você encontra estrutura,
             orientação e um ambiente pensado para te ajudar a manter a constância.
           </p>
+          <div className="mt-6 inline-flex items-center border-l-4 border-brand pl-4">
+            <p className="font-display text-2xl font-extrabold uppercase tracking-normal text-brand md:text-3xl">
+              Somos feitos de movimento
+            </p>
+          </div>
           <a
             href={site.whatsappUrl}
             target="_blank"
@@ -38,7 +43,7 @@ export function About() {
             <div className="rounded-2xl border border-border bg-card p-5">
               <div className="text-3xl font-extrabold text-brand">★</div>
               <div className="mt-2 text-sm font-semibold">Atendimento próximo</div>
-              <p className="mt-1 text-xs text-foreground/60">Ambiente acolhedor de bairro.</p>
+              <p className="mt-1 text-xs text-foreground/60">Ambiente acolhedor e próximo.</p>
             </div>
             <div className="col-span-2 rounded-2xl border border-border gradient-brand p-5 text-[var(--brand-foreground)]">
               <div className="text-sm font-semibold opacity-90">Localizada no</div>

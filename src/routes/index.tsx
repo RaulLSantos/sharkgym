@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Treine na SHARK GYM em Cascavel - PR. Academia acessível com musculação, cardio, avaliação física, personal trainer, artes marciais e aula experimental pelo WhatsApp.",
+          "Treine na SHARK GYM em Cascavel - PR. Academia acessível com musculação, cardio, avaliação física, personal trainer e aula experimental pelo WhatsApp.",
       },
       { property: "og:title", content: "SHARK GYM | Academia de Musculação em Cascavel - PR" },
       {
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
           "@type": "SportsActivityLocation",
           name: "SHARK GYM",
           description:
-            "Academia de musculação em Cascavel - PR. Musculação, cardio, personal trainer, avaliação física e artes marciais.",
+            "Academia de musculação em Cascavel - PR. Musculação, cardio, personal trainer e avaliação física.",
           telephone: "+55 45 99822-6281",
           address: {
             "@type": "PostalAddress",

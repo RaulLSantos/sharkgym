@@ -10,8 +10,8 @@ export function Footer() {
             SHARK <span className="text-brand">GYM</span>
           </span>
           <p className="mt-3 max-w-sm text-sm text-foreground/70">
-            Academia acessível no bairro Santa Cruz, em Cascavel - PR. Musculação, cardio, personal
-            trainer, avaliação física e artes marciais.
+            Academia acessível no bairro Santa Cruz, em Cascavel - PR. Musculação, cardio, aulas
+            coletivas, personal trainer e avaliação física.
           </p>
         </div>
 
@@ -48,6 +48,19 @@ export function Footer() {
             <li>
               <a className="hover:text-brand" href="#contato">
                 Contato
+              </a>
+            </li>
+            <li className="pt-2">
+              <a className="font-medium text-foreground/85 hover:text-brand" href="/termos-de-uso">
+                Termos de Uso
+              </a>
+            </li>
+            <li>
+              <a
+                className="font-medium text-foreground/85 hover:text-brand"
+                href="/politica-de-privacidade"
+              >
+                Política de Privacidade
               </a>
             </li>
           </ul>
@@ -89,9 +102,14 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-foreground/60 md:flex-row md:px-8">
           <p>© 2026 SHARK GYM. Todos os direitos reservados.</p>
-          <a href="./politica-de-privacidade" className="hover:text-brand">
-            Política de Privacidade
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <a href="/termos-de-uso" className="hover:text-brand">
+              Termos de Uso
+            </a>
+            <a href="/politica-de-privacidade" className="hover:text-brand">
+              Política de Privacidade
+            </a>
+          </div>
         </div>
       </div>
     </footer>

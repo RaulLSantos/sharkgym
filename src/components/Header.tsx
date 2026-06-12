@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { site } from "@/data/siteData";
 
@@ -29,10 +29,12 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8 md:py-4">
-        <a href="./" className="flex items-center gap-2" aria-label="SHARK GYM - Página inicial">
-          <span className="text-xl font-extrabold tracking-tight md:text-2xl">
-            SHARK <span className="text-brand">GYM</span>
-          </span>
+        <a href="./" className="flex items-center" aria-label="SHARK GYM - Página inicial">
+          <img
+            src="/sharkgym-wordmark.jpeg"
+            alt="SHARK GYM"
+            className="h-8 w-auto max-w-[160px] shrink-0 object-contain md:h-9 md:max-w-[190px]"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-7" aria-label="Navegação principal">

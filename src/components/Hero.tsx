@@ -22,7 +22,7 @@ export function Hero() {
             Treine perto de casa, <span className="text-brand">evolua no seu ritmo.</span>
           </h1>
           <p className="mt-5 max-w-xl text-base text-foreground/80 md:text-lg">
-            Na SHARK GYM, você encontra musculação, cardio, avaliação física, artes marciais e
+            Na SHARK GYM, você encontra musculação, cardio, aulas coletivas, avaliação física e
             acompanhamento para começar ou continuar sua evolução com mais segurança.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

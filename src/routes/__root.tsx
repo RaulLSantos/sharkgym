@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Academia SHARK GYM no bairro Santa Cruz, Cascavel - PR. Musculação, cardio, personal trainer, avaliação física e artes marciais.",
+          "Academia SHARK GYM no bairro Santa Cruz, Cascavel - PR. Musculação, cardio, personal trainer e avaliação física.",
       },
       { property: "og:site_name", content: "SHARK GYM" },
       { property: "og:type", content: "website" },
@@ -113,6 +113,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/svg+xml", href: "/sharkgym-logo.svg" },
+      { rel: "shortcut icon", type: "image/svg+xml", href: "/sharkgym-logo.svg" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
