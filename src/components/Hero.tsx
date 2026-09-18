@@ -1,6 +1,17 @@
 import heroImg from "@/assets/hero-gym.jpg";
+import receptionImg from "@/assets/sharkgymrecepcao.jpg";
+import gymImg from "@/assets/sharkgymacademia.jpg";
+import hallImg from "@/assets/shrakgym salao.jpg";
 import { site } from "@/data/siteData";
 import { Dumbbell, HeartPulse, UserCheck, Users } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const heroPhotos = [
+  { src: heroImg, alt: "Pessoas treinando musculação na academia SHARK GYM em Cascavel" },
+  { src: receptionImg, alt: "Recepção da SHARK GYM em Cascavel" },
+  { src: gymImg, alt: "Estrutura da academia SHARK GYM em Cascavel" },
+  { src: hallImg, alt: "Salão da SHARK GYM em Cascavel" },
+];
 
 const floatingCards = [
   { icon: Dumbbell, label: "Musculação" },
@@ -10,6 +21,16 @@ const floatingCards = [
 ];
 
 export function Hero() {
+  const [activePhoto, setActivePhoto] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActivePhoto((current) => (current + 1) % heroPhotos.length);
+    }, 5000);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
     <section id="inicio" className="relative isolate overflow-hidden pt-24 pb-20 md:pt-32 md:pb-28">
       <div className="absolute inset-0 -z-10 gradient-radial-brand" aria-hidden="true" />
@@ -47,14 +68,18 @@ export function Hero() {
 
         <div className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border md:aspect-[5/6]">
-            <img
-              src={heroImg}
-              alt="Pessoas treinando musculação na academia SHARK GYM em Cascavel"
-              width={1536}
-              height={1024}
-              className="h-full w-full object-cover"
-              fetchPriority="high"
-            />
+            {heroPhotos.map((photo, index) => (
+              <img
+                key={photo.src}
+                src={photo.src}
+                alt={photo.alt}
+                aria-hidden={index !== activePhoto}
+                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+                  index === activePhoto ? "opacity-100" : "opacity-0"
+                }`}
+                fetchPriority={index === 0 ? "high" : "auto"}
+              />
+            ))}
             <div
               className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"
               aria-hidden="true"

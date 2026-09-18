@@ -1,9 +1,11 @@
 import {
   Apple,
+  Activity,
   CalendarRange,
   ClipboardCheck,
   Dumbbell,
   HeartPulse,
+  Swords,
   UserCog,
   UsersRound,
 } from "lucide-react";
@@ -36,13 +38,24 @@ const secondaryServices = [
   },
   {
     icon: CalendarRange,
-    title: "Planos Mensal, Trimestral e Anual",
+    title: "Planos Mensal, Trimestral, Semestral e Anual",
     desc: "Opções flexíveis para se adaptar ao seu objetivo e orçamento.",
   },
   {
     icon: Apple,
     title: "Nutrição",
     desc: "Acompanhamento nutricional para alinhar alimentação, rotina e treino de acordo com seus objetivos.",
+    wide: true,
+  },
+  {
+    icon: Activity,
+    title: "Fisioterapia",
+    desc: "Cuidado com o movimento, a mobilidade e a recuperação para o seu dia a dia.",
+  },
+  {
+    icon: Swords,
+    title: "Artes Marciais",
+    desc: "Capoeira, Muay Thai e boxe para desenvolver técnica, disciplina e condicionamento físico.",
     wide: true,
   },
 ];
